@@ -1,3 +1,4 @@
+import renderContactPage from "./contact-page";
 import renderHomePage from "./home-page";
 import renderMenuPage from "./menu-page";
 
@@ -18,6 +19,9 @@ function renderPageTabs(){
 
     const contactPageTab = document.createElement('button');
     contactPageTab.innerText = 'Contact Page';
+    contactPageTab.addEventListener('click', () => {
+        renderContactPage();
+    });
 
     contentContainer.appendChild(homePageTab);
     contentContainer.appendChild(menuPageTab);
