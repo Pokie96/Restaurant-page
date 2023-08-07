@@ -1,7 +1,11 @@
 import homePageImage from './assets/home-page-image.jpeg'
+import renderPageTabs from './page-tabs';
 
 function renderHomePage(){
     const contentContainer = document.querySelector('#content');
+    contentContainer.innerHTML = '';
+
+    renderPageTabs();
     
     //Create title for the page
     const titleElement = document.createElement('h1');
