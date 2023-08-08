@@ -5,9 +5,14 @@ function renderContactPage(){
     contentContainer.innerHTML = '';
 
     renderPageTabs();
+
+    const headerBanner = document.querySelector('.header-banner');
+
+    const activeButton = document.querySelector('#contact-button');
+    activeButton.style.borderBottom = 'solid white';
     
     const titleElement = document.createElement('h1');
-    titleElement.innerText = "Contact Big Bob's Burgers";
+    titleElement.innerText = "Big Bob's Burgers";
     titleElement.className = "title";
 
     const contactList = document.createElement('ul');
@@ -25,7 +30,9 @@ function renderContactPage(){
     contactList.appendChild(phoneNumber);
     contactList.appendChild(emailAddress);
 
-    contentContainer.appendChild(titleElement);
+    headerBanner.prepend(titleElement);
+
+    contentContainer.appendChild(headerBanner);
     contentContainer.appendChild(contactList);
 };
 

@@ -6,9 +6,14 @@ function renderMenuPage(){
 
     renderPageTabs();
 
+    const headerBanner = document.querySelector('.header-banner');
+
+    const activeButton = document.querySelector('#menu-button');
+    activeButton.style.borderBottom = 'solid white';
+
     //Create title for the page
     const titleElement = document.createElement('h1');
-    titleElement.innerText = "Big Bob's Burgers Menu";
+    titleElement.innerText = "Big Bob's Burgers";
     titleElement.className = "title";
 
     //Create menu list for page
@@ -32,7 +37,9 @@ function renderMenuPage(){
     menuList.appendChild(menuItem4);
     menuList.appendChild(menuItem5);
 
-    contentContainer.appendChild(titleElement);
+    headerBanner.prepend(titleElement);
+
+    contentContainer.appendChild(headerBanner);
     contentContainer.appendChild(menuList);
 }
 

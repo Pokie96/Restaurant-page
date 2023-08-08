@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: url("../assets/home-page-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+p{
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.title{
+    color: white;
+    font-size: 70px;
+}
+
+.header-banner{
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+.nav-container button{
+    margin: 0px 20px 0px 20px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: solid rgba(255, 255, 255, 0);
+}
+
+.nav-container button:hover{
+    cursor: pointer;
+    border-bottom: solid white;
+}
