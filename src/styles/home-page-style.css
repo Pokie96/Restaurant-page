@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../assets/JosefinSans-VariableFont_wght.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
 *{
     margin: 0;
+    font-family: 'JosefinSans';
 }
 
 body{
@@ -44,4 +52,21 @@ p{
 .nav-container button:hover{
     cursor: pointer;
     border-bottom: solid white;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-evenly;
+    align-items: end;
+    margin-right: 10%;
+}
+
+.text-container :first-child{
+    font-size: 40px;
+}
+
+.page-text{
+    font-size: 30px;
 }

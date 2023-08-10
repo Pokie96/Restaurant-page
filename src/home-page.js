@@ -24,12 +24,27 @@ function renderHomePage(){
     //imageElement.src = homePageImage;
 
     //Create text for page
-    const pageText = document.createElement('p');
-    pageText.innerText = "Home of the Belly Buster Burger! Here at BBB's, we use the freshest ingredients for your gourmet experience at an unbeatable cost!"
-    pageText.className = "page-text";
-    
+    const textContainer = document.createElement('div');
+    textContainer.className = 'text-container';
+
+    const pageText1 = document.createElement('p');
+    pageText1.innerText = "Home of the Belly Buster Burger!";
+    pageText1.className = "page-text";
+
+    const pageText2 = document.createElement('p');
+    pageText2.innerText = "Here at BBB's, we use the freshest ingredients for your gourmet experience at an unbeatable cost!";
+    pageText2.className = "page-text";
+
+    const pageText3 = document.createElement('p');
+    pageText3.innerText = "Only the best cuts of fresh Angus Beef are used in our recipes."
+    pageText3.className = "page-text";
+
     //contentContainer.appendChild(imageElement);
-    contentContainer.appendChild(pageText);
+    textContainer.appendChild(pageText1);
+    textContainer.appendChild(pageText2);
+    textContainer.appendChild(pageText3);
+
+    contentContainer.appendChild(textContainer);
 }
 
 export default renderHomePage
