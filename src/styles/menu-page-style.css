@@ -1,0 +1,32 @@
+.menu-body{
+    background: url("../assets/menu-page-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.menu-container{
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    width: 70%;
+    right: 0;
+    justify-content: space-evenly;
+}
+
+h3{
+    color: white;
+    font-size: 36px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+li{
+    color: white;
+    list-style-type: none;
+    font-size: 26px;
+    padding-top: 5x;
+    padding-bottom: 5px;
+}

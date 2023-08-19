@@ -6,6 +6,9 @@ function renderHomePage(){
     const contentContainer = document.querySelector('#content');
     contentContainer.innerHTML = '';
 
+    const body = document.querySelector('body')
+    body.className = 'home-body'
+
     renderPageTabs();
 
     const headerBanner = document.querySelector('.header-banner');

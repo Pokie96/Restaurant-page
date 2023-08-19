@@ -10,7 +10,7 @@
     font-family: 'JosefinSans';
 }
 
-body{
+.home-body{
     background: url("../assets/home-page-background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
