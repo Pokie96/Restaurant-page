@@ -22,6 +22,14 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /favicon\.ico$/,
+                loader: 'url',
+                query: { 
+                    limit: 1,
+                    name: '[name].[ext]',
+                },
+            },
         ],
     },
 };
