@@ -1,8 +1,12 @@
 import renderPageTabs from "./page-tabs";
+import "./styles/contact-page-style.css"
 
 function renderContactPage(){
     const contentContainer = document.querySelector('#content');
     contentContainer.innerHTML = '';
+
+    const body = document.querySelector('body');
+    body.className = 'contact-body';
 
     renderPageTabs();
 
@@ -16,6 +20,7 @@ function renderContactPage(){
     titleElement.className = "title";
 
     const contactList = document.createElement('ul');
+    contactList.className = "contact-list";
 
     const address = document.createElement('li');
     address.textContent = "12 Imitation Lane, Lookalikesville. FA12 3KE";
