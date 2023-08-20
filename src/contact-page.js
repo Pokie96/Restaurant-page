@@ -29,7 +29,7 @@ function renderContactPage(){
     phoneNumber.textContent = "Phone Number: 0100 8008135";;
 
     const emailAddress = document.createElement('li');
-    emailAddress.textContent = "Email Address: BigBobsBurgers@bur.ger";
+    emailAddress.textContent = "Email Address: BigBusterBurgers@bur.ger";
 
     contactList.appendChild(address);
     contactList.appendChild(phoneNumber);
