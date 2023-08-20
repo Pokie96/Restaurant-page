@@ -16,7 +16,7 @@ function renderContactPage(){
     activeButton.style.borderBottom = 'solid white';
     
     const titleElement = document.createElement('h1');
-    titleElement.innerText = "Big Bob's Burgers";
+    titleElement.innerText = "Big Buster Burgers";
     titleElement.className = "title";
 
     const contactList = document.createElement('ul');
@@ -37,8 +37,19 @@ function renderContactPage(){
 
     headerBanner.prepend(titleElement);
 
+    //Create footer for page
+    const footer = document.createElement("div");
+    footer.className = "footer";
+
+    const footerText = document.createElement("p");
+    footerText.innerText = "Created by Adam Christie";
+
+    footer.appendChild(footerText);
+
+    //Append children to content container
     contentContainer.appendChild(headerBanner);
     contentContainer.appendChild(contactList);
+    contentContainer.appendChild(footer);
 };
 
 export default renderContactPage;

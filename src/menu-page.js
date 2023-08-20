@@ -5,8 +5,8 @@ function renderMenuPage(){
     const contentContainer = document.querySelector('#content');
     contentContainer.innerHTML = '';
 
-    const body = document.querySelector('body')
-    body.className = 'menu-body'
+    const body = document.querySelector('body');
+    body.className = 'menu-body';
 
     renderPageTabs();
 
@@ -17,7 +17,7 @@ function renderMenuPage(){
 
     //Create title for the page
     const titleElement = document.createElement('h1');
-    titleElement.innerText = "Big Bob's Burgers";
+    titleElement.innerText = "Big Buster Burgers";
     titleElement.className = "title";
 
     //Create container for menu lists
@@ -110,8 +110,19 @@ function renderMenuPage(){
 
     headerBanner.prepend(titleElement);
 
+    //Create footer for page
+    const footer = document.createElement("div");
+    footer.className = "footer";
+
+    const footerText = document.createElement("p");
+    footerText.innerText = "Created by Adam Christie";
+
+    footer.appendChild(footerText);
+
+    //Append children to the content container
     contentContainer.appendChild(headerBanner);
     contentContainer.appendChild(menuContainer);
+    contentContainer.appendChild(footer);
 }
 
 export default renderMenuPage;

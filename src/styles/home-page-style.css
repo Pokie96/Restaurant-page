@@ -70,3 +70,16 @@ p{
 .page-text{
     font-size: 30px;
 }
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.600);
+    font-style: italic;
+}

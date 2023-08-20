@@ -18,13 +18,9 @@ function renderHomePage(){
     
     //Create title for the page
     const titleElement = document.createElement('h1');
-    titleElement.innerText = "Big Bob's Burgers";
+    titleElement.innerText = "Big Buster Burgers";
     titleElement.className = "title";
     headerBanner.prepend(titleElement);
-
-    //Add image to the page
-    //const imageElement = document.createElement('img');
-    //imageElement.src = homePageImage;
 
     //Create text for page
     const textContainer = document.createElement('div');
@@ -42,12 +38,22 @@ function renderHomePage(){
     pageText3.innerText = "Only the best cuts of fresh Angus Beef are used in our recipes."
     pageText3.className = "page-text";
 
-    //contentContainer.appendChild(imageElement);
+    //Create footer for page
+    const footer = document.createElement("div");
+    footer.className = "footer";
+
+    const footerText = document.createElement("p");
+    footerText.innerText = "Created by Adam Christie";
+
+    footer.appendChild(footerText);
+
+    //contentContainer.appendChild(imageElement)
     textContainer.appendChild(pageText1);
     textContainer.appendChild(pageText2);
     textContainer.appendChild(pageText3);
 
     contentContainer.appendChild(textContainer);
+    contentContainer.appendChild(footer);
 }
 
 export default renderHomePage
