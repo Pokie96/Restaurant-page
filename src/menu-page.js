@@ -82,7 +82,7 @@ function renderMenuPage(){
 
     //Create drinks list for page
     const drinksList = document.createElement('ul');
-    drinksList.className = "sides-list"
+    drinksList.className = "drinks-list"
 
     const drinksTitle = document.createElement('h3');
     drinksTitle.innerText = "Drinks";
